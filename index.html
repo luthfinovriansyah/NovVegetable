@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:grey;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    color:black;
+    padding: 200px;
+
+}
+
+h1 {
+    font-size: 50px;
+    width: 400px;
+}
+
+h2 {
+    font-size: 15px;    
+}
+
+h3 {
+    font-size: 10px;
+    font: italic;
+}
+
+.button {
+    background-color: green;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 50px;
+    border-radius: 50px;
+    height: 50px;
+    width: 200px;
+}
+.button:hover {
+    background-color: grey;
+}
+
+.gambar1     {
+    display: flex;
+    margin-top: 30px;
+    gap: 20px;
+    }
+    img {
+        width: 100vh;
+    }
+
+    .header-image {
+    width: 100%;
+    height: auto;
+}
+
+.bantuan {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #e4f8e8;
+}
+
+.service {
+    text-align: center;
+    border: 1px solid #28a745;
+    padding: 20px;
+    border-radius: 8px;
+    width: 20%;
+}
+
+.ayah-navigasi {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.navigasi2 {
+    font-size: 18px;
+    color: gray;
+    text-align: center;
+}
+.navigasi2 span {
+    margin: 0 15px;
+    cursor: pointer;
+}
+.navigasi2 span:hover {
+    text-decoration: underline;
+    color: green;
+}
+.upin :hover {
+background-color: black;
+}
+
+.produk {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    margin: 10px;
+    display: inline-block;
+    width: 415px; 
+}
+
+img {   
+    max-width: 100%;
+    height: auto;
+}
+
+.harga {
+    font-weight: bold;
+}
+
+.keranjang {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.keranjang:hover {
+    background-color:gray;
+}
+footer {
+    padding: 20px;
+    color: white;
+    background-color: green;
+  
+    text-align: center;
+    font-weight: bold;
+  }
+
+  input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.keren {
+    align-items: center;
+}
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.about-section {
+    background: #ffffff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #35424a;
+}
+.judul {
+    color: #ddd;
+}
+
+</style>
+</head>
+<body>
+
+    <ul>
+        <li><a class="active" href="#home" onclick="navigateTo('home')">Shop</a></li>
+        <li><a href="#contact" onclick="navigateTo('contact')">Contact</a></li>
+        <li><a href="#about" onclick="navigateTo('about')">About</a></li>
+    </ul>
+<div class="hero">
+    <div id="home" class="gambar1">
+        <img src="image.png">
+    </div>
+    <div class="text">
+        <h3>WELCOME TO SHOPERY</h3>
+        <H1>Fresh & Healthy Organic Food</H1>
+        <p>free shipping on ail your order. we deliver, you enjoy</p>
+        <button class="button">shop now</button>
+    </div>
+</div>
+<section class="bantuan">
+    <div class="service">
+        <h3>Free Shipping</h3>
+        <p>Free shipping with discount</p>
+    </div>
+    <div class="service">
+        <h3>Great Support 24/7</h3>
+        <p>Instant access to Contact</p>
+    </div>
+    <div class="service">
+        <h3>100% Secure Payment</h3>
+        <p>We ensure your money is safe</p>
+    </div>
+    <div class="service">
+        <h3>Money-Back Guarantee</h3>
+        <p>30 days money-back guarantee</p>
+    </div>
+</section>
+<div class="ayah-navigasi">Introducing Our Products</div>
+    <div class="navigasi2">
+        <span>All</span>  
+        <span>Vegetable</span> | 
+        <span>Fruit</span> | 
+        <span>Meat & Fish</span> | 
+        <span>View All</span>
+    </div>
+
+<div class="produk">
+    <img src="p.jpg" alt="Bayam enak rasanya masyallah">
+    <h3>bayam</h3>
+    <p class="harga">149.000 Rp</p>
+    <button class="keranjang">Add to Cart</button>
+</div>  
+<div class="produk">
+    <img src="j.jpg" alt="tomat enak rasanya masyallah">
+    <h3>tomat</h3>
+    <p class="harga">350.000 Rp</p>
+    <button class="keranjang">Add to Cart</button>
+</div>
+
+<div class="produk">
+    <img src="g.jpg" alt="wortel enak rasanya masyallah">
+    <h3>wortel</h3>
+    <p class="harga">100000 Rp</p>
+    <button class="keranjang">Add to Cart</button>
+</div>
+
+<div class="produk">
+    <img src="s.jpg" alt="kubis  enak rasanya masyallah">
+    <h3>kubis</h3>
+    <p class="harga">50000 Rp</p>
+    <button class="keranjang">Add to Cart</button>
+</div>
+
+<div class="produk">
+    <img src="k.jpg" alt="pisang  enak rasanya masyallah">
+    <h3>pisang</h3>
+    <p class="harga">50000 Rp</p>
+    <button class="keranjang">Add to Cart</button>
+</div>
+
+<div class="produk">
+    <img src="melon.jpg" alt="melon  enak rasanya masyallah">
+    <h3>melon</h3>
+    <p class="harga">100000Rp</p>
+    <button class="keranjang">Add to Cart</button>
+</div>
+
+<div class="produk">
+    <img src="apel.jpg" alt="apel  enak rasanya masyallah">
+    <h3>apel</h3>
+    <p class="harga">17000 Rp</p>
+    <button class="keranjang">Add to Cart</button>
+</div>
+
+<div class="produk">
+    <img src="jeruk.jpg" alt="jeruk  enak rasanya masyallah">
+    <h3>jeruk</h3>
+    <p class="harga">20000 Rp</p>
+    <button class="keranjang">Add to Cart</button>
+</div>
+</div>
+<div id="content">
+    <div id="news" style="display: none;"></div>
+    <div id="contact" style="display: none;"></div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<form id="formInput">
+    <label for="nama">Name:</label><br>
+    <input type="text" id="nama" name="Name"><br>
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="Message">
+    <input type="submit" value="Submit">
+  </form>
+
+  <div id="home">
+</div>
+
+<div id="contact" style="display: none;">
+</div>
+
+
+<div id="about" style="display: none;">
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<header>
+    <h1 class="judul">Tentang Kami</h1>
+</header>
+<main>
+    <section class="about-section">
+        <h2>Siapa Kami</h2>
+        <p>Kami adalah Novri vegetable, sebuah perusahaan yang berdedikasi untuk menjual dan mengajarkan bahwa penting nya hidup sehat.</p>
+    </section>
+    
+    <section class="about-section">
+        <h2>Sejarah Kami</h2>
+        <p>Didirikan pada tahun 2050, kami mulai dengan cerita singkat tentang bagaimana perusahaan dimulai.</p>
+    </section>
+    
+    <section class="about-section">
+        <h2>Visi dan Misi</h2>
+        <p>Visi kami adalah "Menjadi produsen sayuran organik terkemuka di Indonesia", dan misi kami adalah "memastikan akses pada sayuran segar dan bergizi bagi semua orang" .</p>
+    </section>
+    
+    <section class="about-section">
+        <h2>Nilai-nilai Kami</h2>
+        <p>Kami percaya pada allah </p>
+    </section>
+    
+    <section class="about-section">
+        <h2>Tim Kami</h2>
+        <p>Kami memiliki tim yang terdiri dari 10 tim profesional yang berpengalaman di bidangnya.</p>
+    </section>
+</main>
+
+
+  <script>
+     document.getElementById('formInput').addEventListener('submit', validasiForm);
+      function validasiForm(event) {
+  event.preventDefault();
+
+  var Name = document.getElementById('nama').value;
+  var Message = document.getElementById('email').value;
+
+  if(Name == "") {
+    alert("Nama tidak boleh kosong");
+    return false;
+  }
+
+  if(Message == "") {
+    alert("Email tidak boleh kosong");
+    return false;
+  }
+
+  alert("Form berhasil disubmit");
+  return true;
+}
+
+function navigateTo(section) {
+        document.querySelectorAll('#content > div').forEach(div => {
+            div.style.display = 'none';
+        });
+
+        document.getElementById(section).style.display = 'block';
+
+        document.querySelectorAll('a').forEach(link => {
+            link.classList.remove('active');
+        });
+        document.querySelector(`a[href="#${section}"]`).classList.add('active');
+    }
+  </script>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div style="position: fixed; bottom: 0px; left: 10px;width:130px;height:160px;"><a href="http://www.cakrawaladunia.com/" target="_blank"><img border="0" src="http://s.myniceprofile.com/myspacepic/656/th/65649.gif" title="My widget" alt="animasi bergerak gif" /></a><small><center><a href="http://permathic.blogspot.com/2012/04/kumpulan-widget-animasi-yang-lucu-dan.html" target="_blank" title="Cara Memasang Widget Animasi">My Widget</a></center></small></div>
+</body>
+</html>
