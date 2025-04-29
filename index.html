@@ -446,7 +446,7 @@ function navigateTo(section) {
   <br>
   <div style="position: fixed; bottom: 0px; left: 10px;width:130px;height:160px;">
     <a href="naruto.gif" target="_blank">
-        <img border="0" src="naruto.gif" title="My widget" alt="animasi bergerak gif" />
+        <img id="animatedImage" border="0" src="naruto.gif" title="My widget" alt="animasi bergerak gif" />
     </a>
     <small>
         <center>
@@ -454,5 +454,12 @@ function navigateTo(section) {
         </center>
     </small>
 </div>
+
+<script>
+    document.getElementById('animatedImage').addEventListener('click', function(event) {
+        event.preventDefault(); 
+        alert("Selamat anda mendapatkan hadiah sebesar 1triliun!");
+    });
+</script>
 </body>
 </html>
